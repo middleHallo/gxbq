@@ -1,0 +1,6 @@
+<!--pages/result/result.wxml-->
+<view class='container'>
+  <image src='{{path}}' style='750rpx;' mode='widthFix' class='finalImg' bindtap='clickImg'></image>
+  <canvas canvas-id='grbq' style='width:750px;height:1334px;' hidden></canvas>
+  <canvas canvas-id='icon' style='width:200px;height:200px;' hidden></canvas>
+</view>

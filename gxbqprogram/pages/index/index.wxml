@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<import src="../welCropper/welCropper.wxml" />
+<!-- <import src="../myModal/myModal.wxml"> -->
+<!-- 这里之所以加一层view开控制隐藏，是因为如果一开始不隐藏
+     页面会闪一下
+ -->
+<view wx:if="{{showCropper}}">
+ <template is="welCropper" data="{{cropperData:cropperData, cropperMovableItems:cropperMovableItems, cropperChangableData:cropperChangableData}}"></template> 
+</view>
+
+
+<button bindtap='selectTap' data-mode='rectangle'>选择图片</button>
+<button bindtap='add'>选择图片</button>
+<modal wx:if="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm'>
+    <view class='modal-content'>
+      <input type='text' placeholder='请输入标签，不超过12字' class='bq' maxlength='12'></input>
+    </view>
+  </modal>
+

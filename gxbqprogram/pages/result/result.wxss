@@ -1,0 +1,11 @@
+/* pages/result/result.wxss */
+
+
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+
+.finalImg{
+
+}

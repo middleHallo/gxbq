@@ -1,0 +1,8 @@
+/**index.wxss**/
+@import "../welCropper/welCropper.wxss";
+
+.bq{
+  border:  solid 1px #A2A2A2;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}

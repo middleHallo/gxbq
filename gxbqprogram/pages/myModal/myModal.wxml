@@ -1,0 +1,8 @@
+<!--pages/myModal.wxml-->
+<view class='mask' wx:if='{{show}}' bindtap='clickMask'>
+  <modal wx:if="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm'>
+    <view class='modal-content'>
+      <input type='text' placeholder='请输入标签'></input>
+    </view>
+  </modal>
+</view>
