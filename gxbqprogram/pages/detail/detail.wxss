@@ -1,10 +1,10 @@
-/**index.wxss**/
-@import "../welCropper/welCropper.wxss";
 
 .container{
   margin: 0px;
   padding: 0px;
   position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .backimg{
@@ -17,16 +17,67 @@
 }
 
 .contents{
-  padding: 40rpx;
-  z-index: 80;
+  width: 530rpx;
+  z-index: 8;
+  margin-top: 50px;
 }
 
-.listContents{
+.listcontent{
+  padding: 0px;
+  margin:0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
   width: 570rpx;
-  margin-bottom: 20px;
-  z-index: 90;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 70px;
 }
+
+.iconview{
+  width: 70px;
+  height: 70px;
+  padding: 0px;
+  position: relative;
+  z-index: 90;
+}
+.iconImg{
+  width:70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.iconback{
+  width:70px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.contentview{
+  width: 450rpx;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  left: -20px;
+}
+
+.listBack{
+  width: 450rpx;
+  height: 40px;
+}
+
+.title{
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 16px;
+}
+
+
 
 .list{
   display: flex;
@@ -35,7 +86,7 @@
   align-items: center;
   align-content: center;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   height: 50px;
 }
 
@@ -69,7 +120,8 @@
 .listtext{
   position: absolute;
   left: 40px;
-  top: 13px;
+  top: 17px;
+  font-size: 15px;
 }
 
 .listdelete{
@@ -81,10 +133,10 @@
 }
 
 .addlist{
-  width: 50px;
-  height: 50px;
-  margin-top: 15px;
-  margin-left: 30px;
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .next{
@@ -94,35 +146,14 @@
   width: 200rpx;
   height: 35px;
 }
-
-.mytabbar{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  margin: 0px;
-  padding: 0px;
-}
-
-.mytabbar image{
-  width: 100px;
-  height: 40px;
-  position: relative;
-  top: -20rpx;
-  /* bottom: 30px; */
-  /* margin-left: 10px; */
-}
-
-.textC{
-  background-color: wheat;
-  
-  width: 750rpx;
-  height: 100px;
-}
-
 .bq{
   border:  solid 1px #A2A2A2;
   padding-left: 20rpx;
   padding-right: 20rpx;
   height: 35px;
+}
+
+
+.actionview{
+  text-align: center;
 }

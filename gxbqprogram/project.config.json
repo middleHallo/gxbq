@@ -4,14 +4,14 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.1",
+	"libVersion": "1.9.96",
 	"appid": "wx0a598ee419a4404e",
 	"projectname": "grbqprogram",
 	"isGameTourist": false,

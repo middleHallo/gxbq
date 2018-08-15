@@ -1,0 +1,25 @@
+/* pages/createshare/createshare.wxss */
+.container{
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.action{
+  position: absolute;
+  width: 550rpx;
+  bottom: 150px;
+  left: 100rpx;
+  right: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.actionimg{
+  width: 200rpx;
+  height: 35px;
+  z-index: 99;
+}

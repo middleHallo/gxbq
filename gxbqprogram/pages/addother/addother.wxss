@@ -1,0 +1,104 @@
+/* pages/addother/addother.wxss *//* pages/other/other.wxss */
+/**index.wxss**/
+@import "../welCropper/welCropper.wxss";
+.container{
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backimg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.contents{
+
+  width: 530rpx;
+  z-index: 8;
+  margin-top: 50px;
+}
+
+.titlediv{
+  
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-left{
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+}
+
+.list-right{
+  width: 10px;
+  height: 3px;
+  position: relative;
+  top: 19px;
+  left: -34px;
+}
+
+.title{
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.titleInput{
+  position: absolute;
+  top: 5px;
+  left: 65px;
+  font-size: 14px;
+}
+
+.listicon{
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.titleback{
+  width: 200px;
+  height: 35px;
+}
+
+.descback{
+  width: 200px;
+  height: 35px;
+}
+
+.descback{
+  width: 430rpx;
+  height: 80px;
+}
+
+.selectedImg{
+  width: 200px;
+}
+
+.selectImage{
+  width: 100px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.next{
+  position: absolute;
+  bottom: 100px;
+  left: 275rpx;
+  width: 200rpx;
+  height: 35px;
+  z-index: 99;
+}

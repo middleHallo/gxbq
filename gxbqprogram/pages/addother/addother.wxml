@@ -1,0 +1,27 @@
+<import src="../welCropper/welCropper.wxml" />
+<view class='container'>
+    <image src='/images/bg1.jpg' style='width:100vw;height:100vh;' class='backimg'></image>
+    <view class='contents'>
+      <view class='titlediv'>
+          <image src='/images/list.png' class='listicon'></image>
+          <text class='title'>标题</text>
+          <image src='/images/list-left.png' class='list-left'></image>
+          <image src='/images/listback.png' class='titleback'></image>
+          <image src='/images/list-right.png' class='list-right'></image>
+          <input type='text' class='titleInput' placeholder='输入标题,不超过11字' maxlength='11' bindinput='inputTitle'></input>
+      </view>
+      <view class='descdiv titlediv'>
+          <image src='/images/list.png' class='listicon'></image>
+          <text class='title'>头像</text>
+          <image src='/images/select.png' class='selectImage' bindtap='selecteImg'  data-mode='rectangle'></image>
+      </view>
+      <image src='{{selectedImg}}' class='selectedImg' mode='widthFix'></image>
+    </view>
+    <image src='/images/next.png' class='next' bindtap='next'></image>
+ </view>
+
+ <view wx:if="{{showCropper}}">
+      <template is="welCropper" data="{{cropperData:cropperData, cropperMovableItems:cropperMovableItems, cropperChangableData:cropperChangableData}}"></template> 
+  </view>
+
+ <canvas canvas-id='share' style='width:750px;height:1334px;' hidden></canvas>

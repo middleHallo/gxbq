@@ -1,2 +1,30 @@
-<!--pages/other/other.wxml-->
-<text>pages/other/other.wxml</text>
+<view class='container'>
+    <image src='/images/bg1.jpg' style='width:100vw;height:100vh;' class='backimg'></image>
+        <view class='contents'>
+            <scroll-view scroll-y style='height:{{scrollHeight}}px;' class='listContents'>
+                <block wx:for="{{listdata}}" wx:key="{{index}}">
+                  <view class='listcontent' data-idx='{{index}}' bindtap='detail'>
+                    <view class='iconview'>
+                        <image src='{{item.imgurl}}' class='iconImg'></image>
+                        <image src='/images/icon_back.png' class='iconback'></image>
+                    </view>
+                    <view class='contentview'>
+                        <image src='/images/listbackgroud.png' class='listBack'></image>
+                        <text class='title'>{{item.title}}</text>
+                        <text class='num'>共有{{item.d}}个标签</text>
+                        <image src='/images/delete.png' class='delete' data-idx='{{index}}' catchtap='deletelist'></image>
+                    </view>
+                  </view>
+                </block>
+            </scroll-view>
+            <view class='actionview'>
+                <image src='/images/add_back.png' class='addListBack'></image>
+                <image src='/images/add.png' class='addlist' bindtap='add'></image>
+            </view>
+            
+            <view class='mytabbar'>
+                <image src='/images/myself.png'  catchtap='clickMe'></image>
+                <image src='/images/other_select.png'></image>
+            </view>
+        </view>
+ </view>

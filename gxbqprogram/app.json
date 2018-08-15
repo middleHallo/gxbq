@@ -2,7 +2,13 @@
   "pages":[
     "pages/index/index",
     "pages/result/result",
-    "pages/other/other"
+    "pages/other/other",
+    "pages/addother/addother",
+    "pages/createshare/createshare",
+    "pages/authrise/authrise",
+    "pages/detail/detail",
+    "pages/next/next",
+    "pages/othertags/othertags"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,19 +16,6 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "自我印象",
-      "iconPath": "/images/me.png",
-      "selectedIconPath": "/images/me_select.png"
-    },
-    {
-      "pagePath": "pages/other/other",
-      "text": "ta的印象",
-      "iconPath": "/images/ta.png",
-      "selectedIconPath": "/images/ta_select.png"
-    }]
-  }
+  "workers":"workers"
  
 }

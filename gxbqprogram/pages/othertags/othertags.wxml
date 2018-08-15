@@ -1,5 +1,4 @@
-<!--pages/result/result.wxml-->
-
+<!--pages/othertags/othertags.wxml-->
 <view class='container'>
   <image src='{{shareImgUrl}}' style='width:100vw;height:100vh;' bindtap='clickImg'></image>
   <image src='/images/save.png' class='selectImg' bindtap='saveToAlbum'></image>

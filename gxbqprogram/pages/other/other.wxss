@@ -1,1 +1,140 @@
 /* pages/other/other.wxss */
+/**index.wxss**/
+.container{
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.backimg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.contents{
+  padding: 40rpx;
+  z-index: 80;
+}
+
+.listContents{
+  width: 570rpx;
+  margin-bottom: 20px;
+  z-index: 81;
+  margin-top: 30px;
+  position: relative;
+}
+
+.actionview{
+  position: relative;
+   width: 570rpx;
+}
+
+.addListBack{
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 570rpx;
+  height: 60px;
+  z-index: 82;
+}
+
+.addlist{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  left:235rpx;
+  bottom: 20px; 
+  z-index: 83;
+}
+
+.mytabbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mytabbar image{
+  width: 100px;
+  height: 40px;
+  position: relative;
+  top: -20rpx;
+}
+
+.listcontent{
+  padding: 0px;
+  margin:0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 570rpx;
+  margin-bottom: 10px;
+  height: 140rpx;
+}
+
+.iconview{
+  width: 140rpx;
+  height: 140rpx;
+  padding: 0px;
+  position: relative;
+  z-index: 90;
+}
+.iconImg{
+  width:140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.iconback{
+  width:140rpx;
+  height: 140rpx;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.contentview{
+  width: 450rpx;
+  height: 120rpx;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  left: -20px;
+}
+
+.listBack{
+  width: 450rpx;
+  height: 120rpx;
+}
+
+.title{
+
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 16px;
+}
+
+.num{
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  font-size: 12px;
+}
+
+.delete{
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+
+}

@@ -1,0 +1,12 @@
+<!--pages/createshare/createshare.wxml-->
+
+<view class='container'>
+  <image src='{{shareImgUrl}}' style='width:100vw;height:100vh;' bindtap='clickImg'></image>
+  <view  class='action'>
+    <image src='/images/backto.png' class='actionimg' bindtap='backto'></image>
+    <image src='/images/save.png'  class='actionimg' bindtap='save'></image>
+  </view>
+</view>
+
+<canvas canvas-id='share' style='width:750px;height:1334px;' hidden></canvas>
+<canvas canvas-id='icon' style='width:200px;height:200px;' hidden></canvas>

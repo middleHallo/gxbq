@@ -1,0 +1,40 @@
+<view class='container'>
+    <image src='/images/bg1.jpg' style='width:100vw;height:100vh;' class='backimg'></image>
+    <view class='contents'>
+      <view class='listcontent'  bindtap='detail'>
+        <view class='iconview'>
+            <image src='{{result.imgurl}}' class='iconImg'></image>
+            <image src='/images/icon_back.png' class='iconback'></image>
+        </view>
+        <view class='contentview'>
+            <image src='/images/listbackgroud.png' class='listBack'></image>
+            <text class='title'>{{result.title}}</text>
+        </view>
+      </view>
+      <scroll-view class='tagscontent' scroll-y style='height:{{scrollHeight}}px;'>
+        <view class='list' wx:for="{{tags}}" wx:key="{{index}}">
+            <image src='/images/list.png' class='listicon'></image>
+            <image src='/images/list-left.png' class='list-left'></image>
+            <image src='/images/listback.png' class='listback'></image>
+            <image src='/images/list-right.png' class='list-right'></image>
+            <text class='listtext'>{{item.detailtext}}</text>    
+        </view>
+      </scroll-view>
+      <view class='actionview'>
+            <!-- <image src='/images/pre.png' wx:if="{{isSelf}}" class='addlist'></image>wx:if="{{!isSelf}}" --> 
+            <image src='/images/backto.png' class='addlist'  bindtap='backto' ></image>
+            <image src='/images/addtag.png' class='addlist' bindtap='add' wx:if="{{!isSelf}}"></image>
+            <image src='/images/pre.png'  class='addlist' bindtap='previewOtherTags' wx:if="{{isSelf}}"></image>
+            
+        </view>
+        <modal wx:if="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm'>
+                <view class='modal-content'>
+                  <input type='text' placeholder='请输入标签，不超过10字' class='bq' maxlength='10' bindinput='inputTags'></input>
+                </view>
+            </modal>
+      <view>
+      </view>
+    </view>
+ </view>
+
+
